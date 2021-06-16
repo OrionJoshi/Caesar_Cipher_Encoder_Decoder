@@ -263,9 +263,9 @@ input[type="number"] {
   .box {
     margin-bottom: 50px;
   }
-  .cypher-text {
+  /* .cypher-text {
     margin-bottom: 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 795px) {
