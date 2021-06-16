@@ -58,10 +58,7 @@ encodeBtn.addEventListener("click", (e) => {
   btn.innerHTML = "ENCODE";
   status = "encode";
   displayShiftDesc.innerHTML = shiftDisplay(shiftNum);
-  plainWrapper.style.order = "1";
-  configWrapper.style.order = "2";
-
-  cypherWrapper.style.order = "3";
+  styleEncodeBtn();
 });
 
 decodeBtn.addEventListener("click", (e) => {
@@ -70,9 +67,7 @@ decodeBtn.addEventListener("click", (e) => {
   btn.innerHTML = "DECODE";
   status = "decode";
   displayShiftDesc.innerHTML = shiftDisplay(shiftNum);
-  cypherWrapper.style.order = "1";
-  configWrapper.style.order = "2";
-  plainWrapper.style.order = "3";
+  styleDecodeBtn();
 });
 
 // function to display shift description
@@ -82,4 +77,18 @@ function shiftDisplay(shiftNum) {
   } else {
     return shiftDesc(shiftNum) + "→a";
   }
+}
+
+// function to style encodeBtn
+function styleEncodeBtn() {
+  plainWrapper.style.order = "1";
+  configWrapper.style.order = "2";
+  cypherWrapper.style.order = "3";
+}
+
+// function to style decodeBtn
+function styleDecodeBtn() {
+  cypherWrapper.style.order = "1";
+  configWrapper.style.order = "2";
+  plainWrapper.style.order = "3";
 }
