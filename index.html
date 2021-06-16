@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encoder Decoder</title>
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <div class="outer-wrapper">
+      <!-- navbar -->
+      <div class="nav-wrapper container">
+        <p class="nav-heading">CEASER CIPHER ENCODER DECORDER</p>
+      </div>
+      <!-- main body -->
+      <div class="main-wrapper container">
+        <!-- plain text section -->
+        <div class="plain-text box" id="plain-text-wrapper">
+          <!-- plain text header -->
+          <div class="header">
+            <span>VIEW</span>
+            <h3>Plaintext</h3>
+          </div>
+          <!-- plain text body -->
+          <div class="plain-body">
+            <textarea
+              class="view-text-area"
+              style="height: 200px"
+              placeholder="Your Plain Text"
+              id="view-text-area"
+            ></textarea>
+          </div>
+        </div>
+        <!-- config section -->
+        <div class="config box" id="config-wrapper">
+          <!-- config header section-->
+          <div class="header">
+            <ul class="cypher-list">
+              <li><button id="encode">ENCODE</button></li>
+              <li><button id="decode">DECODE</button></li>
+            </ul>
+            <h3>Ceaser cipher</h3>
+          </div>
+          <!-- shift number section -->
+          <div class="form">
+            <div class="shift">
+              <div class="field">
+                <label for="" class="field-label">SHIFT</label>
+              </div>
+              <div class="field-number">
+                <button class="btn-step-down" id="btn-step-down">
+                  Step Down
+                </button>
+                <div class="number-input-wrapper">
+                  <div class="number-display">
+                    <span class="display-value" id="shift-value">1</span>
+                    <span class="display-desc" id="display-desc">a→b</span>
+                  </div>
+                </div>
+                <button class="btn-step-up" id="btn-step-up">Step Up</button>
+              </div>
+            </div>
+
+            <div class="field-text">
+              <label for="" class="field-alphabet field">ALPHABET</label>
+              <div class="alphabet-wrapper">
+                <span>abcdefghijklmnopqrstuvwxyz</span>
+              </div>
+            </div>
+
+            <!-- encod and decode button -->
+            <div class="encode-decode-btn-wrapper">
+              <button class="enc-dec-btn" id="enc-dec-btn">ENCODE</button>
+            </div>
+            .
+          </div>
+        </div>
+        <!-- cypher text container -->
+        <div class="cypher-text box" id="cypher-text-wrapper">
+          <!-- cypher text header -->
+          <div class="header">
+            <span>VIEW</span>
+            <h3>Ciphertext</h3>
+          </div>
+          <!-- cypher text body -->
+          <div class="cypher-body">
+            <textarea
+              class="view-text-area"
+              style="height: 200px"
+              placeholder="Your Cypher Text"
+              id="cypher-text-area"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <div class="footer-wrapper container">
+        <h3>Made by <a href="https://github.com/khageshwor/">khageshwor</a></h3>
+      </div>
+    </div>
+
+    <!-- scripts file -->
+    <script src="./Js/style.js"></script>
+    <script src="./Js/function.js"></script>
+  </body>
+</html>
