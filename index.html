@@ -9,94 +9,98 @@
   </head>
   <body>
     <div class="outer-wrapper">
-      <!-- navbar -->
-      <div class="nav-wrapper container">
-        <p class="nav-heading">CEASER CIPHER ENCODER DECORDER</p>
-      </div>
-      <!-- main body -->
-      <div class="main-wrapper container">
-        <!-- plain text section -->
-        <div class="plain-text box" id="plain-text-wrapper">
-          <!-- plain text header -->
-          <div class="header">
-            <span>VIEW</span>
-            <h3>Plaintext</h3>
-          </div>
-          <!-- plain text body -->
-          <div class="plain-body">
-            <textarea
-              class="view-text-area"
-              style="height: 200px"
-              placeholder="Your Plain Text"
-              id="view-text-area"
-            ></textarea>
-          </div>
+      <div class="inner-wrapper">
+        <!-- navbar -->
+        <div class="nav-wrapper container">
+          <p class="nav-heading">CEASER CIPHER ENCODER DECORDER</p>
         </div>
-        <!-- config section -->
-        <div class="config box" id="config-wrapper">
-          <!-- config header section-->
-          <div class="header">
-            <ul class="cypher-list">
-              <li><button id="encode">ENCODE</button></li>
-              <li><button id="decode">DECODE</button></li>
-            </ul>
-            <h3>Ceaser cipher</h3>
+        <!-- main body -->
+        <div class="main-wrapper container">
+          <!-- plain text section -->
+          <div class="plain-text box" id="plain-text-wrapper">
+            <!-- plain text header -->
+            <div class="header">
+              <span>VIEW</span>
+              <h3>Plaintext</h3>
+            </div>
+            <!-- plain text body -->
+            <div class="plain-body">
+              <textarea
+                class="view-text-area"
+                style="height: 200px"
+                placeholder="Your Plain Text"
+                id="view-text-area"
+              ></textarea>
+            </div>
           </div>
-          <!-- shift number section -->
-          <div class="form">
-            <div class="shift">
-              <div class="field">
-                <label for="" class="field-label">SHIFT</label>
-              </div>
-              <div class="field-number">
-                <button class="btn-step-down" id="btn-step-down">
-                  Step Down
-                </button>
-                <div class="number-input-wrapper">
-                  <div class="number-display">
-                    <span class="display-value" id="shift-value">1</span>
-                    <span class="display-desc" id="display-desc">a→b</span>
-                  </div>
+          <!-- config section -->
+          <div class="config box" id="config-wrapper">
+            <!-- config header section-->
+            <div class="header">
+              <ul class="cypher-list">
+                <li><button id="encode">ENCODE</button></li>
+                <li><button id="decode">DECODE</button></li>
+              </ul>
+              <h3>Ceaser cipher</h3>
+            </div>
+            <!-- shift number section -->
+            <div class="form">
+              <div class="shift">
+                <div class="field">
+                  <label for="" class="field-label">SHIFT</label>
                 </div>
-                <button class="btn-step-up" id="btn-step-up">Step Up</button>
+                <div class="field-number">
+                  <button class="btn-step-down" id="btn-step-down">
+                    Step Down
+                  </button>
+                  <div class="number-input-wrapper">
+                    <div class="number-display">
+                      <span class="display-value" id="shift-value">1</span>
+                      <span class="display-desc" id="display-desc">a→b</span>
+                    </div>
+                  </div>
+                  <button class="btn-step-up" id="btn-step-up">Step Up</button>
+                </div>
               </div>
-            </div>
 
-            <div class="field-text">
-              <label for="" class="field-alphabet field">ALPHABET</label>
-              <div class="alphabet-wrapper">
-                <span>abcdefghijklmnopqrstuvwxyz</span>
+              <div class="field-text">
+                <label for="" class="field-alphabet field">ALPHABET</label>
+                <div class="alphabet-wrapper">
+                  <span>abcdefghijklmnopqrstuvwxyz</span>
+                </div>
               </div>
-            </div>
 
-            <!-- encod and decode button -->
-            <div class="encode-decode-btn-wrapper">
-              <button class="enc-dec-btn" id="enc-dec-btn">ENCODE</button>
+              <!-- encod and decode button -->
+              <div class="encode-decode-btn-wrapper">
+                <button class="enc-dec-btn" id="enc-dec-btn">ENCODE</button>
+              </div>
+              .
             </div>
-            .
+          </div>
+          <!-- cypher text container -->
+          <div class="cypher-text box" id="cypher-text-wrapper">
+            <!-- cypher text header -->
+            <div class="header">
+              <span>VIEW</span>
+              <h3>Ciphertext</h3>
+            </div>
+            <!-- cypher text body -->
+            <div class="cypher-body">
+              <textarea
+                class="view-text-area"
+                style="height: 200px"
+                placeholder="Your Cypher Text"
+                id="cypher-text-area"
+              ></textarea>
+            </div>
           </div>
         </div>
-        <!-- cypher text container -->
-        <div class="cypher-text box" id="cypher-text-wrapper">
-          <!-- cypher text header -->
-          <div class="header">
-            <span>VIEW</span>
-            <h3>Ciphertext</h3>
-          </div>
-          <!-- cypher text body -->
-          <div class="cypher-body">
-            <textarea
-              class="view-text-area"
-              style="height: 200px"
-              placeholder="Your Cypher Text"
-              id="cypher-text-area"
-            ></textarea>
-          </div>
+        <!-- footer section -->
+        <div class="footer-wrapper container">
+          <h3>
+            Made by <a href="https://github.com/khageshwor/">khageshwor</a>
+          </h3>
         </div>
-      </div>
-      <!-- footer section -->
-      <div class="footer-wrapper container">
-        <h3>Made by <a href="https://github.com/khageshwor/">khageshwor</a></h3>
       </div>
     </div>
 
